@@ -58,7 +58,7 @@ const Navbar = () => {
         </Link>
       </div>
       <a 
-        href="https://drive.google.com/file/d/1H5sf3-0hvMSQFqdsSE2-8w43jJDqOqnp/view?usp=drive_link"  // Replace with your actual download link
+        href="https://drive.google.com/file/d/1HMiCT3L1OCZVOjg-r1fafSDqU8Sde8AI/view?usp=sharing"  // Replace with your actual download link
         className="desktopMenuBtn"
         target="_blank"  // Opens link in a new tab
         rel="noopener noreferrer"
