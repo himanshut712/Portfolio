@@ -1,0 +1,145 @@
+#intro {
+  width: 100vw;
+  max-width: 90rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse; /* Default to column-reverse for mobile */
+  align-items: center;
+}
+
+.bg-container {
+  width: 100%;
+  height: 50vh; /* Adjust as needed */
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.introContent {
+  width: 100%;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center align text for mobile */
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+  margin-right: auto;
+}
+.introText{
+  margin-right:auto;
+}
+.introName {
+  color: yellow;
+}
+
+.introPara {
+  font-size:20px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.Contacts {
+  font-size:30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: left; /* Align contact text to the left */}
+
+.contact {
+  margin: 1rem 0;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start; /* Align items to the left */
+ /* Adjust margin for spacing */
+}
+
+.intro-bg-card {
+  width: 3rem !important;
+  height: 3rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem !important;
+  background-color: rgb(40, 40, 40); /* Adjust the background color as needed */
+  padding: 2rem; /* Increased padding */
+  border-radius: 0.375rem;
+  width: 4rem !important; /* Increase width as needed */
+  height: 4rem !important; /* Increase height as needed */
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.social-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+.btn {
+  background: #007bff;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #intro {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .bg-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .introContent {
+    width: 50%;
+    text-align: left; /* Align text to the left for desktop */
+    margin-top: 10rem; /* Add margin-top for desktop to start content lower */
+  }
+ 
+  .Contacts {
+    font-size:25px !important;
+    margin-left: 0; /* Reset margin for desktop layout */
+  }
+
+  .contact {
+    text-align: left;
+    font-size: medium;
+    margin-left: 0; /* Reset margin for desktop layout */
+  }
+}
+@media screen and (max-width: 767px) {
+  .introContent {
+    font-size: 2rem; /* Decreased font size for mobile */
+  }
+  .introContent {
+    font-size: 2rem; /* Decreased font size for mobile */
+  }
+
+  .Contacts {
+    font-size: 20px !important; /* Adjust font size for Contacts on mobile */
+  }
+
+  .contact {
+    font-size: 16px; /* Adjust font size for contact details on mobile */
+  }
+}

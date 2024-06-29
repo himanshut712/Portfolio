@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.portfolio--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Adjust the gap between sections */
+}
+
+.portfolio--section--container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure projects wrap to new line */
+  justify-content: center;
+  gap: 42.6px; /* Adjust the gap between project cards */
+  width: 100%;
+  max-width: 1280px; /* Limit maximum width */
+  margin-top: 2rem; /* Add margin for spacing */
+}
+
+.projects-title {
+  font-size: 2rem; /* Increased font size for title */
+}
+
+.projects-description {
+  font-size: 1.5rem; /* Increased font size for description */
+}
+
+.portfolio--section--card {
+  display: grid;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px; /* Adjust the vertical gap between elements inside a card */
+  background: rgb(40, 40, 40);
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 12px; /* Adjust border radius as needed */
+  padding: 32px;
+  margin-bottom: 2rem; /* Adjust margin for spacing between rows */
+}
+
+.portfolio--section--title {
+  color: var(--heading-color); /* Adjust heading color */
+  font-size: 2rem; /* Increase font size */
+  padding: 0.5rem; /* Adjust padding */
+}
+
+.portfolio--section--desc {
+  font-size: 1.5rem; /* Increase font size */
+  margin-bottom: 1rem; /* Decrease margin */
+}
+
+.portfolio--section--img {
+  width: 100%;
+  max-width: 100%; /* Ensure image fits within card */
+  border-radius: 8px; /* Adjust image border radius */
+  overflow: hidden;
+}
+
+.portfolio--section--img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.portfolio--link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust gap between link text and icon */
+  border-bottom: 1.33px solid var(--primary); /* Adjust link bottom border */
+  padding-bottom: 10px; /* Adjust padding if necessary */
+  font-weight: 600;
+  color: #007BFF; /* Change the link color */
+}
+
+.portfolio--link svg {
+  width: 16px; /* Adjust icon size */
+  height: 16px;
+  fill: #007BFF; /* Change the icon color */
+}
+
+.portfolio--section--card:hover .portfolio--link {
+  color: #0056b3; /* Change the link color on hover */
+}
+
+.portfolio--section--card:hover .portfolio--link svg {
+  fill: #0056b3; /* Change the icon color on hover */
+}
+
+.portfolio--section--card:hover path {
+  stroke: #006b6a; /* Adjust hover color for SVG path */
+}
+
+@media screen and (max-width: 1280px) {
+  .portfolio--section--card {
+    flex-basis: calc(50% - 1rem); /* Two cards per row on screens up to 1280px wide */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .portfolio--section--card {
+    flex-basis: 100%; /* One card per row on mobile screens */
+  }
+  .projects-title{
+    font-size: 1.5rem;
+  }
+  .projects-description{
+    font-size: 1rem;
+  }
+}
